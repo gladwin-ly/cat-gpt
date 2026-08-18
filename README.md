@@ -127,8 +127,7 @@ $$\mathrm{head}_i = \mathrm{Attention}(QW_i^{Q},\, KW_i^{K},\, VW_i^{V})$$
 
 The lack of proper Scratch debugging really starts to get me here. Of course I knew this would be the most abysmal part of the project, but there were so many bugs, including a leading space that appeared sometimes in front of certain matrices, derailing all my operations.
 
-> [!NOTE]
-> I literally put a band-aid on this bug by just removing a leading space from each row if it exists: it's one of life's sad truths, but I still don't know (and don't intend to find out) the true reason behind this bug.
+> NOTE: I literally put a band-aid on this bug by just removing a leading space from each row if it exists: it's one of life's sad truths, but I still don't know (and don't intend to find out) the true reason behind this bug.
 
 Lots of work was done to optimize this mechanism, and I'm sure there can be much more work that I missed (most likely with issues found in finding a value at `(i,j)` of a matrix) but it works well enough for my models that I'm fine leaving it how it is.
 
